@@ -1,0 +1,207 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        h1 {
+            background: lightblue;
+
+            text-align: center;
+
+        }
+
+        h4 {
+            -webkit-text-fill-color: blue;
+
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1><a href="#" class="text-white">REGISTRATION FORM</a></h1>
+    <div class="p-3 mb-2 bg-info text-white">
+        <form>
+            <div class="form-row">
+                <div class=" col-md-6">
+                    <label for="validationServer01">Name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name"
+                        required>
+                        <div class="invalid-feedback">
+                            Please choose a name.
+                        </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="validationServerUsername">Email</label>
+                    <div class="input-group">
+                        
+                        <input type="email" class="form-control is-valid" id="validationServer01"
+                            placeholder="example@gmail.com" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Contact Number</label>
+                    <input type="tel" class="form-control" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required>
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="validationServer07">Death Of Birth</label>
+                    <input type="date" class="form-control is-invalid" name="dateofbirth" id="validationServer06"
+                        required>
+                    <div class="invalid-feedback">
+                        Please provide a valid address.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group col-md-12">
+                    <label for="validationServer06">Address</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer06" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid address.
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="validationServer03">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="validationServer04">State</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer04" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="validationServer05">Postal</label>
+                        <input type="number" class="form-control is-invalid" id="validationServer05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid postal.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Female
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Male
+                                        </label>
+                                    </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Type Of Account</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radiobutton" id="radio"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Saving
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radiobutton" id="radio"
+                                            value="option2">
+                                        <label class="form-check-label" for="gridRadios4">
+                                            Current
+                                        </label>
+                                    </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" id="invalidCheck3"
+                            style="margin-left:20px" required>
+                        <label class="form-check-label" for="invalidCheck3" style="margin-left:20px">
+                            Check me out
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-left:20px">Sign in</button>
+        </form>
+    </div>
+    </div>
+    <div class="container-fluid" style="align-left:10px">
+
+        <h3>You might also be interested in</h3>
+        <h3></h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>SMS Banking
+                    </h4>
+                    <p>Standard Chartered's SMS <br> Banking service provides you <br> with instant access to your <br>
+                        information at any time.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Mobile Banking
+                    </h4>
+                    <p>Complete a wide range of <br> banking transactions from your <br> mobile phone with Mobile <br>
+                        Banking.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>eStatements
+                    </h4>
+                    <p>Join us in our efforts to protect <br> the environment with paperless <br> statements.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>
+                        Online Banking
+
+                    </h4>
+                    <p>
+                        Standard Chartered's Online <br> Banking service offers you a <br> safe, secure, convenient way
+                        to <br> manage your finances.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <marquee>Thank You For Using Standard charted Banking
+
+        <img src="DEEPTI2.PNG">
+    </marquee>
+
+</body>
+
+</html>
